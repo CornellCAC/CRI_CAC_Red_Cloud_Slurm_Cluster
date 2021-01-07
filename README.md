@@ -1,10 +1,10 @@
-# Elastic Slurm Cluster in a Jetstream image
+# Elastic Slurm Cluster in a RedCloud image 
 
 ## Intro
 
 This repo contains scripts and ansible playbooks for creating a virtual 
-cluster in an Openstack environment, specifically aimed at the XSEDE 
-Jetstream resource.
+cluster in an Openstack environment, specifically aimed at the Red Cloud  
+resource.
 
 The basic structure is to have a single image act as headnode, with
 compute nodes managed by SLURM via the openstack API.
@@ -31,8 +31,8 @@ To build your own Virtual cluster, starting on your localhost:
    the NodeName and PartitionName line. 
    * If you'd like to change the default node size, the ```node_size=```line 
      in ```slurm_resume.sh``` must be changed.
-     This should take values corresponding to instance sizes in Jetstream, like
-     "m1.small" or "m1.large". Be sure to edit the ```slurm.conf``` file to 
+     This should take values corresponding to instance sizes in Red Cloud, like
+     "c1.m8". Be sure to edit the ```slurm.conf``` file to 
      reflect the number of CPUs available.
    * If you'd like to enable any specific software, you should edit 
      ```compute_build_base_img.yml```. The task named "install basic packages"
