@@ -147,14 +147,13 @@ chmod +t /etc
 
 #Possible to handle this at the cloud-init level? From a machine w/
 # pre-loaded openrc, possible via user-data and write_files, yes.
-echo -e "export OS_PROJECT_DOMAIN_NAME=tacc
-export OS_USER_DOMAIN_NAME=tacc
+echo -e "export OS_PROJECT_DOMAIN_NAME=cac
+export OS_USER_DOMAIN_NAME=cac
 export OS_PROJECT_NAME=${OS_PROJECT_NAME}
 export OS_USERNAME=${OS_USERNAME}
 export OS_PASSWORD=${OS_PASSWORD}
 export OS_AUTH_URL=${OS_AUTH_URL}
 export OS_IDENTITY_API_VERSION=3" > /etc/slurm/openrc.sh
-
 
 chown slurm:slurm /etc/slurm/openrc.sh
 
@@ -212,6 +211,7 @@ echo -e "/opt/ohpc/pub 10.0.0.0/24(rw,no_root_squash)" >> /etc/exports
 # These lines remain as a testament to past struggles.
 #centos_base_image=$(openstack image list --status active | grep -iE "API-Featured-centos7-[[:alpha:]]{3,4}-[0-9]{2}-[0-9]{4}" | awk '{print $4}' | tail -n 1)
 #centos_base_image="JS-API-Featured-CentOS7-Latest"
+centos_base_image="centos-7.9"
 #sed -i "s/\(\s*compute_base_image: \).*/\1\"${centos_base_image}\"/" compute_build_base_img.yml | head -n 10
 
 #create temporary script to add local users
