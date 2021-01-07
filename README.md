@@ -45,10 +45,10 @@ To build your own Virtual cluster, starting on your localhost:
    * For other modifications, feel free to get in touch!
 
 1. Run ```headnode_create.sh``` - it *will* require an ssh key to exist in
-   ```${HOME}/.ssh/id_rsa.pub```. This will be the key used for your jetstream
+   ```${HOME}/.ssh/id_rsa.pub```. This will be the key used for your redcloud
    instance! If you prefer to use a different key, be sure to edit this
    script accordingly. The expected argument is only the headnode name, 
-   and will create an 'm1.small' instance for you.
+   and will create an 'c1.m8' instance for you.
 
    ```./headnode_create.sh <headnode-name>```
 
