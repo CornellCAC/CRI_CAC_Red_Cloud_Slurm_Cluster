@@ -3,10 +3,10 @@
 - hosts: localhost
 
   vars:
-    compute_base_image: "JS-API-Featured-CentOS7-Latest"
+    compute_base_image: "centos-7.9"
     sec_group_global: "{{ clouds.tacc.auth.username }}-global-ssh"
     sec_group_internal: "{{ clouds.tacc.auth.username }}-cluster-internal"
-    compute_base_size: "m1.small"
+    compute_base_size: "c1.m8"
     network_name: "{{ clouds.tacc.auth.username }}-elastic-net"
     JS_ssh_keyname: "{{ clouds.tacc.auth.username }}-{{ clouds.tacc.auth.project_name }}-slurm-key"
 
