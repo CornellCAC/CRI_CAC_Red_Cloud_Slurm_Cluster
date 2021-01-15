@@ -21,9 +21,6 @@ To build your own Virtual cluster, starting on your localhost:
 
 1. Clone this repo.
 
-1. Copy the openrc for the allocation in which you'd like to create a 
-   virtual cluster to this repo. 
-
 1. If you'd like to modify your cluster, now is a good time!
    This local copy of the repo will be re-created on the headnode, but
    if you're going to use this to create multiple different VCs, it may be 
