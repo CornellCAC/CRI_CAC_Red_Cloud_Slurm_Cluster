@@ -15,8 +15,9 @@ software, mounts, users, config files, etc.
 ## Current Useage
 To build your own Virtual cluster, starting on your localhost:
 
-1. If you don't already have an openrc file, see the 
-   [Jetstream Wiki](https://wiki.jetstream-cloud.org).
+1. If you don't already have an openrc file, you can use openrc.sh.example 
+   * cp openrc.sh.example openrc.sh
+   * edit at least the the values of:  OS_PROJECT_NAME and OS_USERNAME 
 
 1. Clone this repo.
 
