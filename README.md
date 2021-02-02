@@ -12,7 +12,7 @@ The current plan for compute nodes is to
 use a basic CentOS 7 image, followed by an Ansible playbook to add 
 software, mounts, users, config files, etc. 
 
-## Current Useage
+## Current Usage
 To build your own Virtual cluster, starting on your localhost:
 
 1. If you don't already have an openrc file, you can use openrc.sh.example 
